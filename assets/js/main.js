@@ -10,15 +10,22 @@ window.addEventListener("scroll", scrollHeader);
 
 /*=============== SERVICES MODAL ===============*/
 
-const modalViews = document.querySelector(".services__button");
+document.addEventListener("click", function (event) {
+  const clickedElement = event.target;
 
-modalViews.addEventListener("click", modalView);
+  if (clickedElement.classList.contains("services__button")) {
+    const modal =
+      clickedElement.parentElement.querySelector(".services__modal");
+    modal.style.visibility = "visible";
+    modal.style.opacity = 1;
+  }
 
-function modalView() {
-  const modalElement = document.querySelector(".services__modal");
-  modalElement.style.visibility = "visible";
-  modalElement.style.opacity = 1;
-}
+  if (clickedElement.classList.contains("services__modal-close")) {
+    const modal = clickedElement.closest(".services__modal");
+    modal.style.visibility = "hidden";
+    modal.style.opacity = 0;
+  }
+});
 
 /*=============== MIXITUP FILTER PORTFOLIO ===============*/
 
