@@ -15,10 +15,11 @@ const modalViews = document.querySelector(".services__button");
 modalViews.addEventListener("click", modalView);
 
 function modalView() {
-  // Elementin stilin güncelle
-  modalElement.style.visibility = "hidden";
-  modalElement.style.opacity = 0;
+  const modalElement = document.querySelector(".services__modal");
+  modalElement.style.visibility = "visible";
+  modalElement.style.opacity = 1;
 }
+
 /*=============== MIXITUP FILTER PORTFOLIO ===============*/
 
 /* Link active work */
