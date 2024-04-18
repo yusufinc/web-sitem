@@ -43,24 +43,39 @@ document.addEventListener("click", function (event) {
 
 /*=============== MIXITUP FILTER PORTFOLIO ===============*/
 
-/* Link active work */
-
-const work__items = document.querySelectorAll(".work__item");
-
-work__items.forEach((item) => {
-  item.addEventListener("click", addWorkItem);
+let mixerPortfolio = mixitup(".work__container", {
+  selectors: {
+    target: ".work__card",
+  },
+  animation: {
+    duration: 300,
+  },
 });
 
-function addWorkItem() {
-  // Tüm öğelerden "active-work" sınıfını kaldır
-  work__items.forEach((item) => {
-    item.classList.remove("active-work");
-  });
+/* Link active work */
 
-  // Tıklanan öğeye "active-work" sınıfını ekle
+const linkWork = document.querySelectorAll(".work__item");
+
+// work__items.forEach((item) => {
+//   item.addEventListener("click", addWorkItem);
+// });
+
+// function addWorkItem() {
+//   // Tüm öğelerden "active-work" sınıfını kaldır
+//   work__items.forEach((item) => {
+//     item.classList.remove("active-work");
+//   });
+
+//   // Tıklanan öğeye "active-work" sınıfını ekle
+//   this.classList.add("active-work");
+// }
+
+function activeWork() {
+  linkWork.forEach((l) => l.classList.remove("active-work"));
   this.classList.add("active-work");
 }
 
+linkWork.forEach((l) => l.addEventListener("click", activeWork));
 /*=============== SWIPER TESTIMONIAL ===============*/
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
