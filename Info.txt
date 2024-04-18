@@ -84,12 +84,7 @@ Intermediate
 My Services
 What I Offer
 
-.services__title
-Product <br> Designer
 
-Ui/Ux <br> Designer
-
-Visual <br> Designer
 
 .services__modal-description
 Service with more than 3 years of experience. 
@@ -171,7 +166,7 @@ mailto:examplemail@correo.com
 
 https://api.whatsapp.com/send?phone=51123456789&text=Hello, more information!
 
-https://m.me/bedimcode
+https://m.me/yusufincesu.net
 
 ========== FOOTER ==========
 .footer__title
@@ -190,4 +185,4 @@ https://www.instagram.com/
 https://twitter.com/
 
 .footer__copy
-&#169; Bedimcode. All rigths reserved
+&#169; Yusuf INCESU. All rigths reserved

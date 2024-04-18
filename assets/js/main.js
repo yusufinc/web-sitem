@@ -27,9 +27,39 @@ document.addEventListener("click", function (event) {
   }
 });
 
+// const modalViews = document.querySelectorAll(".service__modal"),
+//   modalBtns = document.querySelectorAll(".service__button"),
+//   modalCloseBtn = document.querySelectorAll(".service__modal-close");
+
+// let modal = function (modalClick) {
+//   modalViews[modalClick].classList.add("active-modal");
+// };
+
+// modalBtns.forEach((mb, i) => {
+//   mb.addEventListener("click", () => {
+//     modal(i);
+//   });
+// });
+
 /*=============== MIXITUP FILTER PORTFOLIO ===============*/
 
 /* Link active work */
+
+const work__items = document.querySelectorAll(".work__item");
+
+work__items.forEach((item) => {
+  item.addEventListener("click", addWorkItem);
+});
+
+function addWorkItem() {
+  // Tüm öğelerden "active-work" sınıfını kaldır
+  work__items.forEach((item) => {
+    item.classList.remove("active-work");
+  });
+
+  // Tıklanan öğeye "active-work" sınıfını ekle
+  this.classList.add("active-work");
+}
 
 /*=============== SWIPER TESTIMONIAL ===============*/
 
