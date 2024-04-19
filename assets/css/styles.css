@@ -1168,6 +1168,10 @@ body.light-theme {
     column-gap: 6rem;
   }
 
+  .contact__message {
+    font-size: var(--small-font-size);
+  }
+
   .footer__social-link {
     font-size: 1.25rem;
     padding: 0.4rem;

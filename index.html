@@ -691,10 +691,11 @@
           <div class="contact__content">
             <h2 class="contact__title">Write me your Message</h2>
 
-            <form action=" " class="contact__form">
+            <form action=" " class="contact__form" id="contact-form">
               <div class="contact__form-div">
                 <label for="" class="contact__form-tag">Names</label>
                 <input
+                  name="user_name"
                   type="text"
                   class="contact__form-input"
                   placeholder="please enter name"
@@ -704,6 +705,7 @@
               <div class="contact__form-div">
                 <label for="" class="contact__form-tag">Mail</label>
                 <input
+                  name="user_email"
                   type="email"
                   class="contact__form-input"
                   placeholder="enter mail"
@@ -713,9 +715,9 @@
               <div class="contact__form-div contact__form-area">
                 <label for="" class="contact__form-tag">Message</label>
                 <textarea
+                  name="user_mesage"
                   placeholder="Write your Message"
-                  name=""
-                  id=""
+                  id="user__message"
                   cols="30"
                   rows="10"
                   class="contact__form-input"
@@ -723,7 +725,10 @@
               </div>
 
               <div class="button-wrapper">
-                <button class="button">Send Message</button>
+                <p class="contact__message" id="contact-message">
+                  gsdfgsdfgsdgf
+                </p>
+                <button type="submit" class="button">Send Message</button>
               </div>
             </form>
           </div>
@@ -786,6 +791,10 @@
 
     <!--=============== MIXITUP FILTER ===============-->
     <script src="assets/js/mixitup.min.js"></script>
+
+    <!--=============== EMAIL JS ===============-->
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
