@@ -481,6 +481,7 @@ body.light-theme {
 
 .about__description {
   margin-bottom: 2rem;
+  text-align: left;
 }
 /*=============== SKILLS ===============*/
 
@@ -574,7 +575,7 @@ body.light-theme {
 .services__modal {
   position: fixed;
   inset: 0;
-  background-color: hsla(var(--second-hue), 28%, 16%, 0.7);
+  background-color: hsla(var(--second-hue), 28%, 16%, 0.6);
   padding: 2rem 1rem;
   display: grid;
   place-items: center;
@@ -1123,7 +1124,7 @@ body.light-theme {
 
   .about__description {
     padding: 0;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2.4rem;
   }
 
   .skills__container {
@@ -1179,9 +1180,8 @@ body.light-theme {
   }
 
   .img__wrapper {
-    height: 496.36px;
-    text-align: center;
-    width: 490px;
+    height: 607.36px;
+    width: 607.36px;
   }
   .about__button_cntc {
     text-align: center;
