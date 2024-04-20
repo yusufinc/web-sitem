@@ -969,7 +969,7 @@ body.light-theme {
   }
 
   .about__description {
-    padding: 0 5rem;
+    padding: 0 2rem;
   }
 
   .skills__container {
@@ -1122,7 +1122,7 @@ body.light-theme {
   }
 
   .about__description {
-    padding: 0 4rem 0 0;
+    padding: 0;
     margin-bottom: 2.5rem;
   }
 
