@@ -17,6 +17,12 @@
       rel="stylesheet"
     />
 
+    <!--=============== FONTAWESOME ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
     <!--=============== SWIPER CSS ===============-->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
@@ -26,6 +32,9 @@
     <title>Yusuf INCESU</title>
   </head>
   <body>
+    <!--=============== TOAST NOTIFICATION ===============-->
+    <div id="toast-container"></div>
+
     <!--=============== HEADER ===============-->
     <header class="header" id="header">
       <nav class="nav container">
@@ -75,10 +84,7 @@
             <h3 class="home__education">Software Developer</h3>
 
             <div class="home__buttons">
-              <a
-                download=""
-                href="assets/pdf/Yusuf-INCESU-Cv.pdf"
-                class="button button--ghost"
+              <a href="#" class="button button--ghost" onclick="requestCV()"
                 >Download CV</a
               >
               <a href="#about" class="button">About Me</a>
@@ -130,23 +136,19 @@
         <h2 class="section__title">About Me</h2>
         <div class="about__container container grid">
           <div class="img__wrapper">
-            <img
-              src="https://media.licdn.com/dms/image/D5603AQE3my7eMdvWew/profile-displayphoto-shrink_800_800/0/1700242963458?e=2147483647&v=beta&t=lYPzwkJpQU3fc7QpwXGqrtFCWez4C25sCmKZogxRFa4"
-              alt=""
-              class="about__img"
-            />
+            <img src="assets/img/main.jpg" alt="" class="about__img" />
           </div>
           <div class="about__data">
             <div class="about__info">
               <div class="about__box">
                 <i class="bx bx-award about__icon"></i>
                 <h3 class="about__title">Experience</h3>
-                <span class="about__subtitle">2 Years Working</span>
+                <span class="about__subtitle">5 Years Working</span>
               </div>
               <div class="about__box">
                 <i class="bx bx-briefcase-alt-2 about__icon"></i>
                 <h3 class="about__title">Completed</h3>
-                <span class="about__subtitle">5 + Project</span>
+                <span class="about__subtitle">25 + Project</span>
               </div>
               <div class="about__box">
                 <i class="bx bxs-graduation about__icon"></i>
@@ -158,16 +160,24 @@
             </div>
 
             <p class="about__description">
-              I am a full-stack developer currently employed at Xinerji, having
-              previously worked at Arnavutköy Municipality Informatics Academy.
-              I have experience in both front-end and back-end systems, and I
-              enjoy creating new applications, features, and games with
-              enthusiasm. Continuous progress and growth in software development
-              are crucial to me. I am proficient in object-oriented programming
-              languages, relational and non-relational databases, and
-              single-page application frameworks. Constant self-improvement and
-              learning best encapsulate my personality. I possess a strong
-              understanding of both front-end and back-end web development.
+              I am a full-stack developer currently working at SUMO Yazılım &
+              Danışmanlık, with prior experience at Xinerji Software and
+              Arnavutköy Municipality Informatics Academy. Over the past years,
+              I have developed and deployed advanced workflow solutions using
+              Bimser Synergy (CSP) and eBA Workflow platforms, created RESTful
+              APIs, integrated external systems, and implemented complex access
+              control and user provisioning solutions. I have extensive
+              experience in front-end and back-end development, including
+              building custom modules and components with C#, .NET, TypeScript,
+              JavaScript, Angular.js, HTML, CSS, as well as working with MSSQL,
+              T-SQL, PostgreSQL, and Knime for reporting, data analysis, and
+              database management. I also have experience with Metabase, Docker,
+              and other modern development tools. I am passionate about creating
+              innovative applications, features, and tools, and I thrive in
+              solving complex problems, optimizing performance, and delivering
+              scalable enterprise solutions. Continuous learning,
+              self-improvement, and mastering new technologies define my
+              professional approach.
             </p>
 
             <div class="about__button_cntc">
@@ -349,6 +359,65 @@
               </div>
             </div>
           </div>
+          <div class="skills__content">
+            <h3 class="skills__title">Workflow & Enterprise Platforms</h3>
+
+            <div class="skills__box">
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">Bimser Synergy (CSP)</h3>
+                    <span class="skills__level">Advanced</span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">eBA Workflow</h3>
+                    <span class="skills__level">Advanced</span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">eBA Plus</h3>
+                    <span class="skills__level">Advanced</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">.NET Framework</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">T-SQL</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+
+                  <div>
+                    <h3 class="skills__name">Knime</h3>
+                    <span class="skills__level">Intermediate</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -359,6 +428,204 @@
 
         <div class="services__container container grid">
           <!-- Birinci servis kartı -->
+          <div class="services__card">
+            <div class="services__card-header">
+              <img
+                src="assets/img/bimser-synergy-login-logo-300x175.png"
+                alt="Bimser Synergy"
+                class="services__card-logo"
+              />
+            </div>
+            <h3 class="services__title">
+              Bimser <br />
+              Synergy (CSP)
+            </h3>
+            <span class="services__button">
+              See more <i class="bx bxs-right-arrow-alt service__icon"></i>
+            </span>
+
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <i class="bx bx-x services__modal-close"></i>
+                <h3 class="services__modal-title">Bimser Synergy (CSP)</h3>
+                <p class="services__modal-description">
+                  Bimser Synergy is a comprehensive enterprise content
+                  management and workflow platform that enables organizations to
+                  digitize and automate their business processes efficiently.
+                </p>
+
+                <ul class="services__modal-list">
+                  <li class="services__modal-item">
+                    <i class="bx bx-check services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      Develop and deploy advanced workflow solutions using CSP
+                      architecture.
+                    </p>
+                  </li>
+                  <li class="services__modal-item">
+                    <i class="bx bx-check services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      Create custom modules and components for enterprise
+                      applications.
+                    </p>
+                  </li>
+                  <li class="services__modal-item">
+                    <i class="bx bx-check services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      Implement complex access control and user provisioning
+                      solutions.
+                    </p>
+                  </li>
+                  <li class="services__modal-item">
+                    <i class="bx bx-check services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      Integrate external systems and create RESTful APIs.
+                    </p>
+                  </li>
+                  <li class="services__modal-item">
+                    <i class="bx bx-check services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      Optimize performance and deliver scalable enterprise
+                      solutions.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- İkinci servis kartı -->
+          <div class="services__card">
+            <div class="services__card-header">
+              <img
+                src="assets/img/eba-plus-logo.png"
+                alt="eBA Plus"
+                class="services__card-logo"
+              />
+            </div>
+            <h3 class="services__title">
+              eBA <br />
+              Plus
+            </h3>
+            <span class="services__button">
+              See more <i class="bx bxs-right-arrow-alt service__icon"></i>
+            </span>
+
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <i class="bx bx-x services__modal-close"></i>
+                <h3 class="services__modal-title">eBA Plus</h3>
+                <p class="services__modal-description">
+                  eBA Plus is an advanced workflow management platform that
+                  provides comprehensive business process automation and
+                  document management capabilities for enterprise organizations.
+                </p>
+
+                <ul class="services__modal-list">
+                  <li class="services__modal-item">
+                    <i class="bx bx-check services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      Design and implement complex workflow automation
+                      solutions.
+                    </p>
+                  </li>
+                  <li class="services__modal-item">
+                    <i class="bx bx-check services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      Create custom business rules and approval processes.
+                    </p>
+                  </li>
+                  <li class="services__modal-item">
+                    <i class="bx bx-check services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      Develop integration solutions with external systems and
+                      databases.
+                    </p>
+                  </li>
+                  <li class="services__modal-item">
+                    <i class="bx bx-check services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      Implement advanced reporting and analytics features.
+                    </p>
+                  </li>
+                  <li class="services__modal-item">
+                    <i class="bx bx-check services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      Provide comprehensive user management and security
+                      features.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Üçüncü servis kartı -->
+          <div class="services__card">
+            <div class="services__card-header">
+              <img
+                src="assets/img/eBAStandartLogo.png"
+                alt="eBA Workflow"
+                class="services__card-logo"
+              />
+            </div>
+            <h3 class="services__title">
+              eBA <br />
+              Workflow
+            </h3>
+            <span class="services__button">
+              See more <i class="bx bxs-right-arrow-alt service__icon"></i>
+            </span>
+
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <i class="bx bx-x services__modal-close"></i>
+                <h3 class="services__modal-title">eBA Workflow</h3>
+                <p class="services__modal-description">
+                  eBA Workflow is a powerful business process management
+                  platform that enables organizations to streamline operations,
+                  automate workflows, and improve productivity through digital
+                  transformation.
+                </p>
+
+                <ul class="services__modal-list">
+                  <li class="services__modal-item">
+                    <i class="bx bx-check services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      Build and deploy enterprise workflow solutions.
+                    </p>
+                  </li>
+                  <li class="services__modal-item">
+                    <i class="bx bx-check services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      Create custom forms and business process automation.
+                    </p>
+                  </li>
+                  <li class="services__modal-item">
+                    <i class="bx bx-check services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      Implement role-based access control and security measures.
+                    </p>
+                  </li>
+                  <li class="services__modal-item">
+                    <i class="bx bx-check services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      Develop integration solutions with enterprise systems.
+                    </p>
+                  </li>
+                  <li class="services__modal-item">
+                    <i class="bx bx-check services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      Provide comprehensive monitoring and reporting
+                      capabilities.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dördüncü servis kartı -->
           <div class="services__card">
             <h3 class="services__title">
               Database <br />
@@ -417,7 +684,7 @@
             </div>
           </div>
 
-          <!-- İkinci servis kartı -->
+          <!-- Beşinci servis kartı -->
           <div class="services__card">
             <h3 class="services__title">
               Metabase <br />
@@ -478,7 +745,7 @@
             </div>
           </div>
 
-          <!-- Üçüncü servis kartı -->
+          <!-- Altıncı servis kartı -->
           <div class="services__card">
             <h3 class="services__title">
               Tailwind.css <br />
@@ -556,6 +823,8 @@
           <span class="work__item" data-filter=".datavisualization"
             >Data visualization</span
           >
+
+          <span class="work__item" data-filter=".workflow">Workflow</span>
         </div>
 
         <div class="work__container container grid">
@@ -623,6 +892,17 @@
               <i class="bx bxs-right-arrow-alt service__icon work__icon"></i
             ></a>
           </div>
+
+          <div class="work__card mix workflow">
+            <img src="assets/img/femworkflow.webp" alt="" class="work__img" />
+
+            <h3 class="work__title">Workflow Solutions</h3>
+
+            <a href="#" class="work__button">
+              Demo
+              <i class="bx bxs-right-arrow-alt service__icon work__icon"></i
+            ></a>
+          </div>
         </div>
       </section>
 
@@ -678,6 +958,21 @@
                 quaerat odit quas eius nisi.
               </p>
             </div>
+            <div class="testimonial__card swiper-slide">
+              <img
+                width="128"
+                height="128"
+                src="assets/img/zahir.jpeg"
+                alt=""
+                class="testimonial__img"
+              />
+
+              <h3 class="testimonial__name">Zahir Abaramak</h3>
+              <p class="testimonial__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel
+                quaerat odit quas eius nisi.
+              </p>
+            </div>
           </div>
           <div class="swiper-pagination"></div>
         </div>
@@ -694,7 +989,7 @@
             <div class="contact__card">
               <i class="bx bx-mail-send contact__card-icon"></i>
               <h3 class="contact__card-title">Email</h3>
-              <span class="contact__card-data"> yusufinc3425@gmail.com </span>
+              <span class="contact__card-data"> yince8603@gmail.com </span>
 
               <a
                 href="mailto:yusufinc3425@gmail.com"
@@ -711,10 +1006,10 @@
             <div class="contact__card">
               <i class="bx bxl-whatsapp contact__card-icon"></i>
               <h3 class="contact__card-title">WhatsApp</h3>
-              <span class="contact__card-data">0505 767 9**2</span>
+              <span class="contact__card-data">0545 618 9**5</span>
 
               <a
-                href="https://api.whatsapp.com/send?phone=5057679**2&text=Merhaba, more information"
+                href="https://api.whatsapp.com/send?phone=5456189**5&text=Merhaba, more information"
                 target="_blank"
                 class="contact__button"
               >
@@ -784,6 +1079,45 @@
                 <button type="submit" class="button">Send Message</button>
               </div>
             </form>
+
+            <!-- Toast Test Buttons (Development Only) -->
+            <div
+              class="toast-test-buttons"
+              style="margin-top: 20px; text-align: center; visibility: hidden"
+            >
+              <button
+                type="button"
+                class="button button--ghost"
+                onclick="toast.success('Bu bir başarı mesajıdır!', 'Başarılı!')"
+                style="margin: 5px"
+              >
+                <i class="fa-solid fa-check"></i> Success Toast
+              </button>
+              <button
+                type="button"
+                class="button button--ghost"
+                onclick="toast.error('Bu bir hata mesajıdır!', 'Hata!')"
+                style="margin: 5px"
+              >
+                <i class="fa-solid fa-times"></i> Error Toast
+              </button>
+              <button
+                type="button"
+                class="button button--ghost"
+                onclick="toast.warning('Bu bir uyarı mesajıdır!', 'Uyarı!')"
+                style="margin: 5px"
+              >
+                <i class="fa-solid fa-exclamation-triangle"></i> Warning Toast
+              </button>
+              <button
+                type="button"
+                class="button button--ghost"
+                onclick="toast.info('Bu bir bilgi mesajıdır!', 'Bilgi')"
+                style="margin: 5px"
+              >
+                <i class="fa-solid fa-info-circle"></i> Info Toast
+              </button>
+            </div>
           </div>
         </div>
       </section>

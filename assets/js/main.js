@@ -1,3 +1,24 @@
+/*=============== CV REQUEST FUNCTION ===============*/
+/*=============== CV REQUEST FUNCTION ===============*/
+function requestCV() {
+  toast.info(
+    "CV'nizi almak için lütfen <strong>yince8603@gmail.com</strong> adresine mail gönderin. En kısa sürede size CV'yi ekte göndereceğim! 📧",
+    "CV Talebi"
+  );
+
+  // Contact form'daki Name alanına focus yap
+  setTimeout(() => {
+    const nameInput = document.querySelector('input[name="user_name"]');
+    if (nameInput) {
+      nameInput.focus();
+      // Smooth scroll ile contact section'a git
+      document.querySelector("#contact").scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  }, 500);
+}
+
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 
 const scrollHeader = () => {
@@ -98,23 +119,100 @@ let swiper = new Swiper(".testimonial__container", {
   },
 });
 
+/*=============== TOAST NOTIFICATION SYSTEM ===============*/
+class ToastNotification {
+  constructor() {
+    this.container = document.getElementById("toast-container");
+  }
+
+  show(type, title, message, duration = 4000) {
+    const toast = document.createElement("div");
+    toast.className = `toast ${type}`;
+
+    const iconMap = {
+      success: "fa-solid fa-check-circle",
+      error: "fa-solid fa-times-circle",
+      warning: "fa-solid fa-exclamation-triangle",
+      info: "fa-solid fa-info-circle",
+    };
+
+    const titleMap = {
+      success: "Başarılı!",
+      error: "Hata!",
+      warning: "Uyarı!",
+      info: "Bilgi",
+    };
+
+    toast.innerHTML = `
+      <div class="toast-header">
+        <div class="toast-title">
+          <i class="toast-icon ${iconMap[type]}"></i>
+          ${title || titleMap[type]}
+        </div>
+        <button class="toast-close" onclick="this.parentElement.parentElement.remove()">
+          <i class="fa-solid fa-times"></i>
+        </button>
+      </div>
+      <div class="toast-message">${message}</div>
+      <div class="toast-progress"></div>
+    `;
+
+    this.container.appendChild(toast);
+
+    // Auto remove after duration
+    setTimeout(() => {
+      if (toast.parentElement) {
+        toast.classList.add("hiding");
+        setTimeout(() => {
+          if (toast.parentElement) {
+            toast.remove();
+          }
+        }, 300);
+      }
+    }, duration);
+
+    return toast;
+  }
+
+  success(message, title) {
+    return this.show("success", title, message);
+  }
+
+  error(message, title) {
+    return this.show("error", title, message);
+  }
+
+  warning(message, title) {
+    return this.show("warning", title, message);
+  }
+
+  info(message, title) {
+    return this.show("info", title, message);
+  }
+}
+
+// Global toast instance
+const toast = new ToastNotification();
+
 /*=============== EMAIL JS ===============*/
-const contactForm = document.getElementById("contact-form"),
-  contactMessage = document.getElementById("contact-message");
+const contactForm = document.getElementById("contact-form");
+const contactMessage = document.getElementById("contact-message");
 
 const sendEmail = (e) => {
   e.preventDefault();
 
-  // Form alanlarını al
   const userName = contactForm.elements["user_name"].value.trim();
   const userEmail = contactForm.elements["user_email"].value.trim();
   const userMessage = contactForm.elements["user_mesage"].value.trim();
 
   // Alanların boş olup olmadığını kontrol et
   if (userName === "" || userEmail === "" || userMessage === "") {
-    contactMessage.textContent = "Please fill out all fields ❌";
+    toast.error("Lütfen tüm alanları doldurun", "Eksik Bilgi");
     return;
   }
+
+  // Loading toast göster
+  const loadingToast = toast.info("Mesajınız gönderiliyor...", "Gönderiliyor");
 
   emailjs
     .sendForm(
@@ -125,16 +223,31 @@ const sendEmail = (e) => {
     )
     .then(
       () => {
-        contactMessage.textContent = "Message sent successfully ✅";
+        // Loading toast'u kaldır
+        if (loadingToast.parentElement) {
+          loadingToast.remove();
+        }
+
+        // Başarı toast'u göster
+        toast.success(
+          "Mesajınız başarıyla gönderildi! En kısa sürede size dönüş yapacağız.",
+          "Başarılı!"
+        );
+
         // Formu temizle
         contactForm.reset();
-        // 3 saniye sonra mesajı gizle
-        setTimeout(() => {
-          contactMessage.textContent = "";
-        }, 3000);
       },
       () => {
-        contactMessage.textContent = "Message not sent (service error) ❌ ";
+        // Loading toast'u kaldır
+        if (loadingToast.parentElement) {
+          loadingToast.remove();
+        }
+
+        // Hata toast'u göster
+        toast.error(
+          "Mesaj gönderilemedi. Lütfen daha sonra tekrar deneyin.",
+          "Gönderim Hatası"
+        );
       }
     );
 };
