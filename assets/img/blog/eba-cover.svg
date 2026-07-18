@@ -1,0 +1,14 @@
+﻿<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='630' viewBox='0 0 1200 630'>
+  <defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0%' stop-color='#10233f'/><stop offset='100%' stop-color='#2563eb'/></linearGradient></defs>
+  <rect width='1200' height='630' fill='url(#g)'/>
+  <circle cx='1030' cy='120' r='210' fill='rgba(255,255,255,0.06)'/>
+  <circle cx='230' cy='315' r='155' fill='rgba(255,255,255,0.10)'/>
+  <svg x='110' y='195' width='240' height='240' viewBox='0 0 128 128'>
+    <rect x='30' y='18' width='58' height='80' rx='8' fill='#ffffff'/>
+    <path d='M42 40h34M42 54h34M42 68h20' stroke='#2563eb' stroke-width='5' stroke-linecap='round'/>
+    <circle cx='90' cy='88' r='22' fill='#bfd4ff'/>
+    <path d='M81 88l6 6 13-14' stroke='#123a7a' stroke-width='5' stroke-linecap='round' stroke-linejoin='round' fill='none'/>
+  </svg>
+  <text x='430' y='285' font-family='Segoe UI, Arial, sans-serif' font-size='30' fill='rgba(255,255,255,0.55)'>&lt;/&gt; blog</text>
+  <text x='430' y='362' font-family='Segoe UI, Arial, sans-serif' font-size='54' font-weight='700' fill='#ffffff'>eBA / eBA Plus</text>
+</svg>

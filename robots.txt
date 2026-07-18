@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yusufincesu.netlify.app/sitemap.xml

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Yusuf İncesu Blog" />
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="assets/img/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="assets/img/favicon.png" />
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Blog | Yusuf İncesu</title>
+  </head>
+  <body>
+    <div id="toast-container"></div>
+
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="index.html" class="nav_logo">Yusuf</a>
+        <div class="nav_menu">
+          <ul class="nav_list">
+            <li class="nav_item">
+              <a href="index.html#home" class="nav_link" data-i18n-aria="nav.home" aria-label="Home">
+                <i class="bx bx-home-alt"></i>
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="index.html#about" class="nav_link" data-i18n-aria="nav.about" aria-label="About">
+                <i class="bx bx-user"></i>
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="index.html#skills" class="nav_link" data-i18n-aria="nav.skills" aria-label="Skills">
+                <i class="bx bx-book"></i>
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="index.html#work" class="nav_link" data-i18n-aria="nav.work" aria-label="Projects">
+                <i class="bx bx-briefcase-alt-2"></i>
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="blog.html" class="nav_link active-link" data-i18n-aria="nav.blog" aria-label="Blog">
+                <i class="bx bx-news"></i>
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="index.html#contact" class="nav_link" data-i18n-aria="nav.contact" aria-label="Contact">
+                <i class="bx bx-message-square-detail"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav_actions">
+          <button type="button" class="lang-button" id="lang-button" aria-label="Language">EN</button>
+          <i class="bx bx-moon change-theme" id="theme-button"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="section page-hero">
+        <span class="section__subtitle" data-i18n="blog.subtitle">My Blog</span>
+        <h1 class="section__title" data-i18n="blog.title">Recent Posts</h1>
+
+        <div class="blog-controls container">
+          <div class="blog-search">
+            <i class="bx bx-search"></i>
+            <input
+              type="text"
+              id="blog-search-input"
+              class="blog-search__input"
+              data-i18n-placeholder="blog.searchPlaceholder"
+              placeholder="Search posts..."
+              aria-label="Search posts"
+            />
+          </div>
+          <div class="blog-filters" id="blog-filters"></div>
+        </div>
+
+        <div class="blog-grid container" id="blog-grid"></div>
+        <p class="page-empty blog-empty" id="blog-empty" hidden data-i18n="blog.empty">No posts found.</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container container">
+        <h1 class="footer__title">Yusuf</h1>
+        <ul class="footer__list">
+          <li><a href="index.html#about" class="footer__link" data-i18n="footer.about">About</a></li>
+          <li><a href="index.html#work" class="footer__link" data-i18n="footer.project">Projects</a></li>
+          <li><a href="index.html#skills" class="footer__link" data-i18n="footer.skills">Skills</a></li>
+          <li><a href="blog.html" class="footer__link" data-i18n="footer.blog">Blog</a></li>
+          <li><a href="index.html#contact" class="footer__link" data-i18n="footer.contact">Contact</a></li>
+        </ul>
+        <ul class="footer__social">
+          <a href="https://github.com/yusufinc" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+            <i class="bx bxl-github"></i>
+          </a>
+          <a href="https://www.instagram.com/yusuf.incesuuu/" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+            <i class="bx bxl-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/yusuf-incesu/" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+            <i class="bx bxl-linkedin"></i>
+          </a>
+        </ul>
+        <span class="footer__copy" data-i18n="footer.copy">© Yusuf INCESU. All rights reserved</span>
+      </div>
+    </footer>
+
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/blog-data.js"></script>
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/seo.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/blog-page.js"></script>
+  </body>
+</html>

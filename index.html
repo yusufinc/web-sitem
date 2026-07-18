@@ -3,120 +3,134 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!--=============== FAVICON ===============-->
-    <link
-      rel="shorttcut icon"
-      href="./assets/img/favicon.ico"
-      type="image/x-icon"
+    <meta
+      name="description"
+      content="Yusuf İncesu — Software developer focused on workflow platforms, .NET, web apps and databases."
     />
-
-    <!--=============== BOXICONS ===============-->
+    <meta name="author" content="Yusuf İncesu" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#0d1520" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Yusuf İncesu" />
+    <meta property="og:title" content="Yusuf İncesu | Software Developer" />
+    <meta
+      property="og:description"
+      content="Workflow platforms, .NET backends, web apps and database solutions."
+    />
+    <meta property="og:url" content="https://yusufincesu.netlify.app/" />
+    <meta property="og:image" content="https://yusufincesu.netlify.app/assets/img/favicon.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://yusufincesu.netlify.app/" />
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="assets/img/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="assets/img/favicon.png" />
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png" />
+    <link rel="manifest" href="site.webmanifest" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-
-    <!--=============== FONTAWESOME ===============-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-
-    <!--=============== SWIPER CSS ===============-->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
-
-    <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css" />
-
-    <title>Yusuf INCESU</title>
+    <title>Yusuf İncesu | Software Developer</title>
   </head>
   <body>
-    <!--=============== TOAST NOTIFICATION ===============-->
     <div id="toast-container"></div>
 
-    <!--=============== HEADER ===============-->
     <header class="header" id="header">
       <nav class="nav container">
-        <a href="#" class="nav_logo">Yusuf</a>
+        <a href="index.html" class="nav_logo">Yusuf</a>
         <div class="nav_menu">
           <ul class="nav_list">
             <li class="nav_item">
-              <a href="#home" class="nav_link active-link">
+              <a href="#home" class="nav_link active-link" data-i18n-aria="nav.home" aria-label="Home">
                 <i class="bx bx-home-alt"></i>
               </a>
             </li>
             <li class="nav_item">
-              <a href="#about" class="nav_link">
+              <a href="#about" class="nav_link" data-i18n-aria="nav.about" aria-label="About">
                 <i class="bx bx-user"></i>
               </a>
             </li>
             <li class="nav_item">
-              <a href="#skills" class="nav_link">
+              <a href="#skills" class="nav_link" data-i18n-aria="nav.skills" aria-label="Skills">
                 <i class="bx bx-book"></i>
               </a>
             </li>
             <li class="nav_item">
-              <a href="#work" class="nav_link">
+              <a href="#work" class="nav_link" data-i18n-aria="nav.work" aria-label="Projects">
                 <i class="bx bx-briefcase-alt-2"></i>
               </a>
             </li>
             <li class="nav_item">
-              <a href="#contact" class="nav_link">
+              <a href="#blog-preview" class="nav_link" data-i18n-aria="nav.blog" aria-label="Blog">
+                <i class="bx bx-news"></i>
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#contact" class="nav_link" data-i18n-aria="nav.contact" aria-label="Contact">
                 <i class="bx bx-message-square-detail"></i>
               </a>
             </li>
           </ul>
         </div>
-        <!-- theme change button -->
-        <i class="bx bx-moon change-theme" id="theme-button"></i>
+        <div class="nav_actions">
+          <button type="button" class="lang-button" id="lang-button" aria-label="Language">EN</button>
+          <i class="bx bx-moon change-theme" id="theme-button"></i>
+        </div>
       </nav>
     </header>
 
-    <!--=============== MAIN ===============-->
     <main class="main">
-      <!--=============== HOME ===============-->
       <section class="home section" id="home">
         <div class="home__container container grid">
           <div class="home__data">
-            <span class="home__gretting">Hello, I'm</span>
+            <span class="home__greeting" data-i18n="home.hello">Hello, I'm</span>
             <h1 class="home__name">Yusuf INCESU</h1>
-            <h3 class="home__education">Software Developer</h3>
+            <h3 class="home__education" data-i18n="home.role">Software Developer</h3>
 
             <div class="home__buttons">
-              <a href="#" class="button button--ghost" onclick="requestCV()"
-                >Download CV</a
+              <a
+                href="assets/pdf/Yusuf_Incesu_CV_EN.pdf"
+                id="cv-link"
+                class="button button--ghost"
+                download
               >
-              <a href="#about" class="button">About Me</a>
+                <span data-i18n="home.cv">Download CV</span>
+              </a>
+              <a href="#about" class="button" data-i18n="home.about">About Me</a>
             </div>
           </div>
 
           <div class="home__handle">
-            <img
-              src="assets/img/WhatsApp_Image_2024-03-31_at_20.38.30__1_-removebg-preview.png"
-              class="home__img"
-              alt=""
-            />
+            <img src="assets/img/perfil.jpg" alt="Yusuf İncesu" class="home__img" />
           </div>
 
           <div class="home__social">
             <a
-              target="_blank"
               href="https://www.linkedin.com/in/yusuf-incesu/"
+              target="_blank"
+              rel="noopener noreferrer"
               class="home__social-link"
             >
               <i class="bx bxl-linkedin-square"></i>
             </a>
             <a
-              target="_blank"
               href="https://github.com/yusufinc"
+              target="_blank"
+              rel="noopener noreferrer"
               class="home__social-link"
             >
               <i class="bx bxl-github"></i>
             </a>
             <a
-              target="_blank"
               href="https://www.instagram.com/yusuf.incesuuu/"
+              target="_blank"
+              rel="noopener noreferrer"
               class="home__social-link"
             >
               <i class="bx bxl-instagram"></i>
@@ -125,294 +139,234 @@
 
           <a href="#about" class="home__scroll">
             <i class="bx bx-mouse home__scroll-icon"></i>
-            <span class="home__scroll-name">Scroll Down</span>
+            <span class="home__scroll-name" data-i18n="home.scroll">Scroll Down</span>
           </a>
         </div>
       </section>
 
-      <!--=============== ABOUT ===============-->
       <section class="about section" id="about">
-        <span class="section__subtitle">My Intro</span>
-        <h2 class="section__title">About Me</h2>
+        <span class="section__subtitle" data-i18n="about.subtitle">My Intro</span>
+        <h2 class="section__title" data-i18n="about.title">About Me</h2>
+
         <div class="about__container container grid">
-          <div class="img__wrapper">
-            <img src="assets/img/main.jpg" alt="" class="about__img" />
-          </div>
+          <img src="assets/img/main.jpg" alt="About Yusuf İncesu" class="about__img" />
+
           <div class="about__data">
             <div class="about__info">
               <div class="about__box">
                 <i class="bx bx-award about__icon"></i>
-                <h3 class="about__title">Experience</h3>
-                <span class="about__subtitle">5 Years Working</span>
+                <h3 class="about__title">5</h3>
+                <span class="about__subtitle" data-i18n="about.exp">Years Working</span>
               </div>
               <div class="about__box">
-                <i class="bx bx-briefcase-alt-2 about__icon"></i>
-                <h3 class="about__title">Completed</h3>
-                <span class="about__subtitle">25 + Project</span>
+                <i class="bx bx-briefcase-alt about__icon"></i>
+                <h3 class="about__title">25+</h3>
+                <span class="about__subtitle" data-i18n="about.projects">Projects</span>
               </div>
               <div class="about__box">
-                <i class="bx bxs-graduation about__icon"></i>
-                <h3 class="about__title">Graduation</h3>
-                <span class="about__subtitle">2020 - 2024</span>
-                <span class="about__subtitle">Sakarya University </span>
-                <span class="about__subtitle">Bachelor of MIS</span>
+                <i class="bx bx-graduation about__icon"></i>
+                <h3 class="about__title" data-i18n="about.gradLabel">Graduation</h3>
+                <span class="about__subtitle" data-i18n="about.grad"
+                  >2020 - 2024 / Sakarya University / Bachelor of MIS</span
+                >
               </div>
             </div>
 
-            <p class="about__description">
-              I am a full-stack developer currently working at SUMO Yazılım &
-              Danışmanlık, with prior experience at Xinerji Software and
-              Arnavutköy Municipality Informatics Academy. Over the past years,
-              I have developed and deployed advanced workflow solutions using
-              Bimser Synergy (CSP) and eBA Workflow platforms, created RESTful
-              APIs, integrated external systems, and implemented complex access
-              control and user provisioning solutions. I have extensive
-              experience in front-end and back-end development, including
-              building custom modules and components with C#, .NET, TypeScript,
-              JavaScript, Angular.js, HTML, CSS, as well as working with MSSQL,
-              T-SQL, PostgreSQL, and Knime for reporting, data analysis, and
-              database management. I also have experience with Metabase, Docker,
-              and other modern development tools. I am passionate about creating
-              innovative applications, features, and tools, and I thrive in
-              solving complex problems, optimizing performance, and delivering
-              scalable enterprise solutions. Continuous learning,
-              self-improvement, and mastering new technologies define my
-              professional approach.
-            </p>
+            <p class="about__description" data-i18n="about.text">I focus on building software that does not get used once and then forgotten, but instead fits naturally into teams’ daily workflows and remains sustainable over the long term.</p>
 
             <div class="about__button_cntc">
-              <a href="#contact" class="button">Contact Me</a>
+              <a href="#contact" class="button" data-i18n="about.contact">Contact Me</a>
             </div>
           </div>
         </div>
       </section>
 
-      <!--=============== SKILLS ===============-->
       <section class="skills section" id="skills">
-        <span class="section__subtitle">My abilities</span>
-        <h2 class="section__title">My Experience</h2>
+        <span class="section__subtitle" data-i18n="skills.subtitle">My abilities</span>
+        <h2 class="section__title" data-i18n="skills.title">My Experience</h2>
 
         <div class="skills__container container grid">
           <div class="skills__content">
-            <h3 class="skills__title">Frontend Stack</h3>
-
+            <h3 class="skills__title" data-i18n="skills.frontend">Frontend Stack</h3>
             <div class="skills__box">
               <div class="skills__group">
                 <div class="skills__data">
                   <i class="bx bxs-badge-check"></i>
-
                   <div>
                     <h3 class="skills__name">HTML</h3>
-                    <span class="skills__level">Advanced</span>
+                    <span class="skills__level" data-i18n="skills.advanced">Advanced</span>
                   </div>
                 </div>
                 <div class="skills__data">
                   <i class="bx bxs-badge-check"></i>
-
                   <div>
                     <h3 class="skills__name">CSS</h3>
-                    <span class="skills__level">Intermediate</span>
+                    <span class="skills__level" data-i18n="skills.intermediate">Intermediate</span>
                   </div>
                 </div>
                 <div class="skills__data">
                   <i class="bx bxs-badge-check"></i>
-
                   <div>
                     <h3 class="skills__name">JavaScript</h3>
-                    <span class="skills__level">Intermediate</span>
+                    <span class="skills__level" data-i18n="skills.intermediate">Intermediate</span>
                   </div>
                 </div>
                 <div class="skills__data">
                   <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">Git & GitHub & GitLab</h3>
-                    <span class="skills__level">Intermediate</span>
-                  </div>
-                </div>
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">Angular</h3>
-                    <span class="skills__level">Basic</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="skills__group">
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">Bootstrap</h3>
-                    <span class="skills__level">Advanced</span>
-                  </div>
-                </div>
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">Tailwind</h3>
-                    <span class="skills__level">Advanced</span>
-                  </div>
-                </div>
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">SCSS</h3>
-                    <span class="skills__level">Advanced</span>
-                  </div>
-                </div>
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
                   <div>
                     <h3 class="skills__name">TypeScript</h3>
-                    <span class="skills__level">Basic</span>
+                    <span class="skills__level" data-i18n="skills.basic">Basic</span>
+                  </div>
+                </div>
+              </div>
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+                  <div>
+                    <h3 class="skills__name">Bootstrap</h3>
+                    <span class="skills__level" data-i18n="skills.advanced">Advanced</span>
                   </div>
                 </div>
                 <div class="skills__data">
                   <i class="bx bxs-badge-check"></i>
-
+                  <div>
+                    <h3 class="skills__name">Tailwind</h3>
+                    <span class="skills__level" data-i18n="skills.advanced">Advanced</span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+                  <div>
+                    <h3 class="skills__name">SCSS</h3>
+                    <span class="skills__level" data-i18n="skills.advanced">Advanced</span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
                   <div>
                     <h3 class="skills__name">jQuery</h3>
-                    <span class="skills__level">Intermediate</span>
+                    <span class="skills__level" data-i18n="skills.intermediate">Intermediate</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="skills__content">
-            <h3 class="skills__title">Backend Stack</h3>
 
+          <div class="skills__content">
+            <h3 class="skills__title" data-i18n="skills.backend">Backend Stack</h3>
             <div class="skills__box">
               <div class="skills__group">
                 <div class="skills__data">
                   <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">Node.js</h3>
-                    <span class="skills__level">Basic</span>
-                  </div>
-                </div>
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">PHP</h3>
-                    <span class="skills__level">Intermediate</span>
-                  </div>
-                </div>
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
                   <div>
                     <h3 class="skills__name">C#</h3>
-                    <span class="skills__level">Intermediate</span>
+                    <span class="skills__level" data-i18n="skills.intermediate">Intermediate</span>
                   </div>
                 </div>
                 <div class="skills__data">
                   <i class="bx bxs-badge-check"></i>
-
                   <div>
-                    <h3 class="skills__name">MongoDB</h3>
-                    <span class="skills__level">Intermediate</span>
+                    <h3 class="skills__name">.NET Framework</h3>
+                    <span class="skills__level" data-i18n="skills.intermediate">Intermediate</span>
                   </div>
                 </div>
               </div>
-
               <div class="skills__group">
                 <div class="skills__data">
                   <i class="bx bxs-badge-check"></i>
-
                   <div>
-                    <h3 class="skills__name">MySQL</h3>
-                    <span class="skills__level">Intermediate</span>
+                    <h3 class="skills__name">ASP.NET</h3>
+                    <span class="skills__level" data-i18n="skills.intermediate">Intermediate</span>
                   </div>
                 </div>
                 <div class="skills__data">
                   <i class="bx bxs-badge-check"></i>
-
                   <div>
-                    <h3 class="skills__name">MsSQL</h3>
-                    <span class="skills__level">Intermediate</span>
-                  </div>
-                </div>
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">PostgreSQL</h3>
-                    <span class="skills__level">Advanced</span>
-                  </div>
-                </div>
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">Redis</h3>
-                    <span class="skills__level">Basic</span>
+                    <h3 class="skills__name">REST API</h3>
+                    <span class="skills__level" data-i18n="skills.intermediate">Intermediate</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="skills__content">
-            <h3 class="skills__title">Workflow & Enterprise Platforms</h3>
 
+          <div class="skills__content">
+            <h3 class="skills__title" data-i18n="skills.database">Database Stack</h3>
             <div class="skills__box">
               <div class="skills__group">
                 <div class="skills__data">
                   <i class="bx bxs-badge-check"></i>
-
                   <div>
-                    <h3 class="skills__name">Bimser Synergy (CSP)</h3>
-                    <span class="skills__level">Advanced</span>
+                    <h3 class="skills__name">PostgreSQL</h3>
+                    <span class="skills__level" data-i18n="skills.advanced">Advanced</span>
                   </div>
                 </div>
                 <div class="skills__data">
                   <i class="bx bxs-badge-check"></i>
-
                   <div>
-                    <h3 class="skills__name">eBA Workflow</h3>
-                    <span class="skills__level">Advanced</span>
+                    <h3 class="skills__name">MSSQL</h3>
+                    <span class="skills__level" data-i18n="skills.intermediate">Intermediate</span>
                   </div>
                 </div>
                 <div class="skills__data">
                   <i class="bx bxs-badge-check"></i>
-
                   <div>
-                    <h3 class="skills__name">eBA Plus</h3>
-                    <span class="skills__level">Advanced</span>
+                    <h3 class="skills__name">SQLite</h3>
+                    <span class="skills__level" data-i18n="skills.intermediate">Intermediate</span>
                   </div>
                 </div>
               </div>
-
               <div class="skills__group">
                 <div class="skills__data">
                   <i class="bx bxs-badge-check"></i>
-
                   <div>
-                    <h3 class="skills__name">.NET Framework</h3>
-                    <span class="skills__level">Intermediate</span>
+                    <h3 class="skills__name">MongoDB</h3>
+                    <span class="skills__level" data-i18n="skills.intermediate">Intermediate</span>
                   </div>
                 </div>
                 <div class="skills__data">
                   <i class="bx bxs-badge-check"></i>
-
                   <div>
-                    <h3 class="skills__name">T-SQL</h3>
-                    <span class="skills__level">Intermediate</span>
+                    <h3 class="skills__name">Redis</h3>
+                    <span class="skills__level" data-i18n="skills.basic">Basic</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__content">
+            <h3 class="skills__title" data-i18n="skills.workflow">Workflow & Enterprise</h3>
+            <div class="skills__box">
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+                  <div>
+                    <h3 class="skills__name">Bimser Synergy (CSP)</h3>
+                    <span class="skills__level" data-i18n="skills.advanced">Advanced</span>
                   </div>
                 </div>
                 <div class="skills__data">
                   <i class="bx bxs-badge-check"></i>
-
                   <div>
-                    <h3 class="skills__name">Knime</h3>
-                    <span class="skills__level">Intermediate</span>
+                    <h3 class="skills__name">eBA / eBA Plus</h3>
+                    <span class="skills__level" data-i18n="skills.advanced">Advanced</span>
+                  </div>
+                </div>
+              </div>
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+                  <div>
+                    <h3 class="skills__name">Metabase</h3>
+                    <span class="skills__level" data-i18n="skills.intermediate">Intermediate</span>
+                  </div>
+                </div>
+                <div class="skills__data">
+                  <i class="bx bxs-badge-check"></i>
+                  <div>
+                    <h3 class="skills__name">Docker</h3>
+                    <span class="skills__level" data-i18n="skills.basic">Basic</span>
                   </div>
                 </div>
               </div>
@@ -421,556 +375,126 @@
         </div>
       </section>
 
-      <!--=============== SERVICES ===============-->
-      <section class="services section">
-        <span class="section__subtitle"> My Blog </span>
-        <h2 class="section__title">Recently Post</h2>
+      <section class="experience section" id="experience">
+        <span class="section__subtitle" data-i18n="exp.subtitle">My Journey</span>
+        <h2 class="section__title" data-i18n="exp.title">Work Experience</h2>
 
-        <div class="services__container container grid">
-          <!-- Birinci servis kartı -->
-          <div class="services__card">
-            <div class="services__card-header">
-              <img
-                src="assets/img/bimser-synergy-login-logo-300x175.png"
-                alt="Bimser Synergy"
-                class="services__card-logo"
-              />
-            </div>
-            <h3 class="services__title">
-              Bimser <br />
-              Synergy (CSP)
-            </h3>
-            <span class="services__button">
-              See more <i class="bx bxs-right-arrow-alt service__icon"></i>
-            </span>
-
-            <div class="services__modal">
-              <div class="services__modal-content">
-                <i class="bx bx-x services__modal-close"></i>
-                <h3 class="services__modal-title">Bimser Synergy (CSP)</h3>
-                <p class="services__modal-description">
-                  Bimser Synergy is a comprehensive enterprise content
-                  management and workflow platform that enables organizations to
-                  digitize and automate their business processes efficiently.
-                </p>
-
-                <ul class="services__modal-list">
-                  <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Develop and deploy advanced workflow solutions using CSP
-                      architecture.
-                    </p>
-                  </li>
-                  <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Create custom modules and components for enterprise
-                      applications.
-                    </p>
-                  </li>
-                  <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Implement complex access control and user provisioning
-                      solutions.
-                    </p>
-                  </li>
-                  <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Integrate external systems and create RESTful APIs.
-                    </p>
-                  </li>
-                  <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Optimize performance and deliver scalable enterprise
-                      solutions.
-                    </p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!-- İkinci servis kartı -->
-          <div class="services__card">
-            <div class="services__card-header">
-              <img
-                src="assets/img/eba-plus-logo.png"
-                alt="eBA Plus"
-                class="services__card-logo"
-              />
-            </div>
-            <h3 class="services__title">
-              eBA <br />
-              Plus
-            </h3>
-            <span class="services__button">
-              See more <i class="bx bxs-right-arrow-alt service__icon"></i>
-            </span>
-
-            <div class="services__modal">
-              <div class="services__modal-content">
-                <i class="bx bx-x services__modal-close"></i>
-                <h3 class="services__modal-title">eBA Plus</h3>
-                <p class="services__modal-description">
-                  eBA Plus is an advanced workflow management platform that
-                  provides comprehensive business process automation and
-                  document management capabilities for enterprise organizations.
-                </p>
-
-                <ul class="services__modal-list">
-                  <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Design and implement complex workflow automation
-                      solutions.
-                    </p>
-                  </li>
-                  <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Create custom business rules and approval processes.
-                    </p>
-                  </li>
-                  <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Develop integration solutions with external systems and
-                      databases.
-                    </p>
-                  </li>
-                  <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Implement advanced reporting and analytics features.
-                    </p>
-                  </li>
-                  <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Provide comprehensive user management and security
-                      features.
-                    </p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!-- Üçüncü servis kartı -->
-          <div class="services__card">
-            <div class="services__card-header">
-              <img
-                src="assets/img/eBAStandartLogo.png"
-                alt="eBA Workflow"
-                class="services__card-logo"
-              />
-            </div>
-            <h3 class="services__title">
-              eBA <br />
-              Workflow
-            </h3>
-            <span class="services__button">
-              See more <i class="bx bxs-right-arrow-alt service__icon"></i>
-            </span>
-
-            <div class="services__modal">
-              <div class="services__modal-content">
-                <i class="bx bx-x services__modal-close"></i>
-                <h3 class="services__modal-title">eBA Workflow</h3>
-                <p class="services__modal-description">
-                  eBA Workflow is a powerful business process management
-                  platform that enables organizations to streamline operations,
-                  automate workflows, and improve productivity through digital
-                  transformation.
-                </p>
-
-                <ul class="services__modal-list">
-                  <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Build and deploy enterprise workflow solutions.
-                    </p>
-                  </li>
-                  <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Create custom forms and business process automation.
-                    </p>
-                  </li>
-                  <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Implement role-based access control and security measures.
-                    </p>
-                  </li>
-                  <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Develop integration solutions with enterprise systems.
-                    </p>
-                  </li>
-                  <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Provide comprehensive monitoring and reporting
-                      capabilities.
-                    </p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!-- Dördüncü servis kartı -->
-          <div class="services__card">
-            <h3 class="services__title">
-              Database <br />
-              RDMS
-            </h3>
-            <span class="services__button">
-              See more <i class="bx bxs-right-arrow-alt service__icon"></i>
-            </span>
-
-            <div class="services__modal">
-              <div class="services__modal-content">
-                <i class="bx bx-x services__modal-close"></i>
-                <h3 class="services__modal-title">Database RDMS</h3>
-                <p class="services__modal-description">
-                  Database RDMS is a powerful relational database management
-                  system that allows efficient organization and retrieval of
-                  data.
-                </p>
-
-                <ul class="services__modal-list">
-                  <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Design and develop single-page application frameworks.
-                    </p>
-                  </li>
-                  <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Utilize relational and non-relational databases for
-                      efficient data storage.
-                    </p>
-                  </li>
-                  <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Implement web development solutions for both backend and
-                      frontend requirements.
-                    </p>
-                  </li>
-                  <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Create engaging web pages with responsive design
-                      techniques.
-                    </p>
-                  </li>
-                  <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Visualize data effectively for analytical insights.
-                    </p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!-- Beşinci servis kartı -->
-          <div class="services__card">
-            <h3 class="services__title">
-              Metabase <br />
-              Tableau
-            </h3>
-            <span class="services__button">
-              See more <i class="bx bxs-right-arrow-alt service__icon"></i>
-            </span>
-
-            <div class="services__modal">
-              <div class="services__modal-content">
-                <i class="bx bx-x services__modal-close"></i>
-                <h3 class="services__modal-title">Metabase Tableau</h3>
-                <p class="services__modal-description">
-                  Metabase and Tableau are powerful data visualization tools
-                  that enable users to create insightful and interactive
-                  dashboards.
-                </p>
-
-                <ul class="services__modal-list">
-                  <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Harness the capabilities of relational and non-relational
-                      databases for data analysis.
-                    </p>
-                  </li>
-                  <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Develop visually stunning dashboards for data exploration
-                      and presentation.
-                    </p>
-                  </li>
-                  <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Customize data visualization for actionable insights and
-                      decision-making.
-                    </p>
-                  </li>
-                  <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Integrate with various data sources for comprehensive
-                      analytics.
-                    </p>
-                  </li>
-                  <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Collaborate and share insights with interactive dashboards
-                      and reports.
-                    </p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!-- Altıncı servis kartı -->
-          <div class="services__card">
-            <h3 class="services__title">
-              Tailwind.css <br />
-              UnoCss
-            </h3>
-            <span class="services__button">
-              See more <i class="bx bxs-right-arrow-alt service__icon"></i>
-            </span>
-
-            <div class="services__modal">
-              <div class="services__modal-content">
-                <i class="bx bx-x services__modal-close"></i>
-                <h3 class="services__modal-title">Tailwind.css UnoCss</h3>
-                <p class="services__modal-description">
-                  Tailwind.css is a utility-first CSS framework for creating
-                  custom designs quickly, while UnoCss is a minimalist CSS
-                  library for simplifying styling tasks.
-                </p>
-
-                <ul class="services__modal-list">
-                  <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Design modern and responsive web interfaces using
-                      Tailwind.css.
-                    </p>
-                  </li>
-                  <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Simplify styling tasks with minimalist CSS solutions
-                      provided by UnoCss.
-                    </p>
-                  </li>
-                  <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Combine Tailwind.css and UnoCss for efficient and
-                      aesthetic web design.
-                    </p>
-                  </li>
-                  <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Reduce code repetition and improve maintainability with
-                      Tailwind.css utility classes.
-                    </p>
-                  </li>
-                  <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Achieve simplicity and performance with UnoCss for CSS
-                      styling.
-                    </p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="timeline container" id="experience-timeline"></div>
       </section>
 
-      <!--=============== WORK ===============-->
       <section class="work section" id="work">
-        <span class="section__subtitle"> My Portfolio </span>
-        <h2 class="section__title">Recent Work</h2>
+        <span class="section__subtitle" data-i18n="work.subtitle">My Portfolio</span>
+        <h2 class="section__title" data-i18n="work.title">Recent Work</h2>
 
         <div class="work__filters">
-          <span class="work__item active-work" data-filter="all">All</span>
-
-          <span class="work__item" data-filter=".web">Web</span>
-
-          <span class="work__item" data-filter=".database">Database</span>
-
-          <span class="work__item" data-filter=".datavisualization"
-            >Data visualization</span
-          >
-
-          <span class="work__item" data-filter=".workflow">Workflow</span>
+          <span class="work__item active-work" data-filter="all" data-i18n="work.all">All</span>
+          <span class="work__item" data-filter=".web" data-i18n="work.web">Web</span>
+          <span class="work__item" data-filter=".mobile" data-i18n="work.mobile">Mobile</span>
+          <span class="work__item" data-filter=".database" data-i18n="work.database">Database</span>
+          <span class="work__item" data-filter=".workflow" data-i18n="work.workflow">Workflow</span>
         </div>
 
-        <div class="work__container container grid">
-          <div class="work__card mix web">
-            <img src="assets/img/work1.jpg" alt="" class="work__img" />
+        <div class="work__container container grid" id="work-container"></div>
+      </section>
 
-            <h3 class="work__title">Web design</h3>
-
-            <a href="#" class="work__button">
-              Demo
-              <i class="bx bxs-right-arrow-alt service__icon work__icon"></i
-            ></a>
-          </div>
-
-          <div class="work__card mix database">
-            <img src="assets/img/work2.jpg" alt="" class="work__img" />
-
-            <h3 class="work__title">PostgreSQL and PgAdmin</h3>
-
-            <a href="#" class="work__button">
-              Demo
-              <i class="bx bxs-right-arrow-alt service__icon work__icon"></i
-            ></a>
-          </div>
-          <div class="work__card mix database">
-            <img src="assets/img/work2.jpg" alt="" class="work__img" />
-
-            <h3 class="work__title">Database Architecture</h3>
-
-            <a href="#" class="work__button">
-              Demo
-              <i class="bx bxs-right-arrow-alt service__icon work__icon"></i
-            ></a>
-          </div>
-
-          <div class="work__card mix datavisualization">
-            <img src="assets/img/work3.jpg" alt="" class="work__img" />
-
-            <h3 class="work__title">Data Manipulation</h3>
-
-            <a href="#" class="work__button">
-              Demo
-              <i class="bx bxs-right-arrow-alt service__icon work__icon"></i
-            ></a>
-          </div>
-
-          <div class="work__card mix web">
-            <img src="assets/img/work4.jpg" alt="" class="work__img" />
-
-            <h3 class="work__title">Tailwind.css</h3>
-
-            <a href="#" class="work__button">
-              Demo
-              <i class="bx bxs-right-arrow-alt service__icon work__icon"></i
-            ></a>
-          </div>
-
-          <div class="work__card mix datavisualization">
-            <img src="assets/img/work5.jpg" alt="" class="work__img" />
-
-            <h3 class="work__title">Metabase</h3>
-
-            <a href="#" class="work__button">
-              Demo
-              <i class="bx bxs-right-arrow-alt service__icon work__icon"></i
-            ></a>
-          </div>
-
-          <div class="work__card mix workflow">
-            <img src="assets/img/femworkflow.webp" alt="" class="work__img" />
-
-            <h3 class="work__title">Workflow Solutions</h3>
-
-            <a href="#" class="work__button">
-              Demo
-              <i class="bx bxs-right-arrow-alt service__icon work__icon"></i
-            ></a>
-          </div>
+      <section class="blog-home section" id="blog-preview">
+        <span class="section__subtitle" data-i18n="blogHome.subtitle">From the blog</span>
+        <h2 class="section__title" data-i18n="blogHome.title">Latest posts</h2>
+        <div class="blog-grid container" id="home-blog-grid"></div>
+        <div class="blog-home__more container">
+          <a href="blog.html" class="button" data-i18n="blogHome.more">View all posts</a>
         </div>
       </section>
 
-      <!--=============== TESTIMONIALS ===============-->
       <section class="testimonial section">
-        <span class="section__subtitle"> My reference say </span>
-        <h2 class="section__title">Testimonials</h2>
+        <span class="section__subtitle" data-i18n="testimonial.subtitle">My references say</span>
+        <h2 class="section__title" data-i18n="testimonial.title">Testimonials</h2>
 
         <div class="testimonial__container container swiper">
           <div class="swiper-wrapper">
             <div class="testimonial__card swiper-slide">
               <img
+                src="assets/img/references/muhammed-cibuk.jpg"
+                alt="Muhammed Çibuk"
+                class="testimonial__img"
                 width="128"
                 height="128"
-                src="https://media.licdn.com/dms/image/C4D03AQEmHonIGQ0djg/profile-displayphoto-shrink_800_800/0/1636484017738?e=2147483647&v=beta&t=XY13deH4ezx9BZgvygtVp_ddBjBjiqs8im0_SRWCqEY"
-                alt=""
-                class="testimonial__img"
               />
-
               <h3 class="testimonial__name">Muhammed Çibuk</h3>
-              <p class="testimonial__description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel
-                quaerat odit quas eius nisi.
+              <p
+                class="testimonial__description"
+                data-en="Reliable teammate who delivers clean workflow solutions and communicates clearly."
+                data-tr="Temiz iş akışı çözümleri üreten ve net iletişim kuran güvenilir bir ekip arkadaşı."
+              >
+                Reliable teammate who delivers clean workflow solutions and communicates clearly.
               </p>
             </div>
             <div class="testimonial__card swiper-slide">
               <img
+                src="assets/img/references/sema-ibrahimoglu.jpg"
+                alt="Sema İbrahimoğlu"
+                class="testimonial__img"
                 width="128"
                 height="128"
-                src="https://i.pinimg.com/280x280_RS/56/95/76/569576c352c9ef5ad23dcabc89e6df54.jpg"
-                alt=""
-                class="testimonial__img"
               />
-
               <h3 class="testimonial__name">Sema İbrahimoğlu</h3>
-              <p class="testimonial__description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel
-                quaerat odit quas eius nisi.
+              <p
+                class="testimonial__description"
+                data-en="Strong ownership on integrations and a careful approach to production changes."
+                data-tr="Entegrasyonlarda güçlü sahiplenme ve prodüksiyon değişikliklerinde dikkatli yaklaşım."
+              >
+                Strong ownership on integrations and a careful approach to production changes.
               </p>
             </div>
             <div class="testimonial__card swiper-slide">
               <img
+                src="assets/img/references/yusuf-ozisik.jpg"
+                alt="Yusuf Özışık"
+                class="testimonial__img"
                 width="128"
                 height="128"
-                src="https://media.licdn.com/dms/image/D4D03AQGwzxDvFuHIdQ/profile-displayphoto-shrink_200_200/0/1709025793421?e=2147483647&v=beta&t=ME6F7AkL9ik9qb1aYkh2pImF15IWwaapfIqgiuhUgjE"
-                alt=""
-                class="testimonial__img"
               />
-
               <h3 class="testimonial__name">Yusuf Özışık</h3>
-              <p class="testimonial__description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel
-                quaerat odit quas eius nisi.
+              <p
+                class="testimonial__description"
+                data-en="Fast learner with solid database and backend instincts."
+                data-tr="Sağlam veritabanı ve backend içgüdüsü olan, hızlı öğrenen bir geliştirici."
+              >
+                Fast learner with solid database and backend instincts.
               </p>
             </div>
             <div class="testimonial__card swiper-slide">
               <img
+                src="assets/img/references/zahir-abaramak.jpg"
+                alt="Zahir Abaramak"
+                class="testimonial__img"
                 width="128"
                 height="128"
-                src="assets/img/zahir.jpeg"
-                alt=""
-                class="testimonial__img"
               />
-
               <h3 class="testimonial__name">Zahir Abaramak</h3>
-              <p class="testimonial__description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel
-                quaerat odit quas eius nisi.
+              <p
+                class="testimonial__description"
+                data-en="Practical problem solver who keeps projects moving without drama."
+                data-tr="Projeleri drama olmadan ilerletebilen pratik bir problem çözücü."
+              >
+                Practical problem solver who keeps projects moving without drama.
+              </p>
+            </div>
+            <div class="testimonial__card swiper-slide">
+              <img
+                src="assets/img/references/pinar-demir.jpg"
+                alt="Pınar Demir"
+                class="testimonial__img"
+                width="128"
+                height="128"
+              />
+              <h3 class="testimonial__name">Pınar Demir</h3>
+              <p
+                class="testimonial__description"
+                data-en="Supportive collaborator with a clear eye for detail and calm communication."
+                data-tr="Detaya önem veren, sakin ve net iletişim kuran destekleyici bir çalışma arkadaşı."
+              >
+                Supportive collaborator with a clear eye for detail and calm communication.
               </p>
             </div>
           </div>
@@ -978,212 +502,136 @@
         </div>
       </section>
 
-      <!--=============== CONTACT ===============-->
       <section class="contact section" id="contact">
-        <span class="section__subtitle">Geti in touch</span>
-        <h2 class="section__title">Contact Me</h2>
+        <span class="section__subtitle" data-i18n="contact.subtitle">Get in touch</span>
+        <h2 class="section__title" data-i18n="contact.title">Contact Me</h2>
 
         <div class="contact__container container grid">
-          <div class="contact__info">
-            <h2 class="contact__title mrg-az">Talk To me</h2>
-            <div class="contact__card">
-              <i class="bx bx-mail-send contact__card-icon"></i>
-              <h3 class="contact__card-title">Email</h3>
-              <span class="contact__card-data"> yince8603@gmail.com </span>
+          <div class="contact__content">
+            <h3 class="contact__title" data-i18n="contact.write">Write me</h3>
 
-              <a
-                href="mailto:yusufinc3425@gmail.com"
-                target="_blank"
-                class="contact__button"
-              >
-                Write me
-                <i
-                  class="bx bxs-right-arrow-alt service__icon contact__button-icon"
-                ></i>
-              </a>
-            </div>
+            <div class="contact__info">
+              <div class="contact__card">
+                <i class="bx bx-mail-send contact__card-icon"></i>
+                <h3 class="contact__card-title" data-i18n="contact.email">Email</h3>
+                <span class="contact__card-data">yince8603@gmail.com</span>
+                <a href="mailto:yince8603@gmail.com" target="_blank" class="contact__button">
+                  <span data-i18n="contact.write">Write me</span>
+                  <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+                </a>
+              </div>
 
-            <div class="contact__card">
-              <i class="bx bxl-whatsapp contact__card-icon"></i>
-              <h3 class="contact__card-title">WhatsApp</h3>
-              <span class="contact__card-data">0545 618 9**5</span>
+              <div class="contact__card">
+                <i class="bx bxl-whatsapp contact__card-icon"></i>
+                <h3 class="contact__card-title" data-i18n="contact.whatsapp">WhatsApp</h3>
+                <span class="contact__card-data">0545 618 9**5</span>
+                <a href="mailto:yince8603@gmail.com" class="contact__button">
+                  <span data-i18n="contact.write">Write me</span>
+                  <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+                </a>
+              </div>
 
-              <a
-                href="https://api.whatsapp.com/send?phone=5456189**5&text=Merhaba, more information"
-                target="_blank"
-                class="contact__button"
-              >
-                Write me
-                <i
-                  class="bx bxs-right-arrow-alt service__icon contact__button-icon"
-                ></i>
-              </a>
-            </div>
-
-            <div class="contact__card">
-              <i class="bx bxl-messenger contact__card-icon"></i>
-              <h3 class="contact__card-title">Facebook</h3>
-              <span class="contact__card-data">yusuf.incesu</span>
-
-              <a
-                href="https://m.me/yusuf.incesuuu"
-                target="_blank"
-                class="contact__button"
-              >
-                Write me
-                <i
-                  class="bx bxs-right-arrow-alt service__icon contact__button-icon"
-                ></i>
-              </a>
+              <div class="contact__card">
+                <i class="bx bxl-messenger contact__card-icon"></i>
+                <h3 class="contact__card-title" data-i18n="contact.messenger">Messenger</h3>
+                <span class="contact__card-data">yusuf.incesuuu</span>
+                <a
+                  href="https://m.me/yusuf.incesuuu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact__button"
+                >
+                  <span data-i18n="contact.write">Write me</span>
+                  <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+                </a>
+              </div>
             </div>
           </div>
 
           <div class="contact__content">
-            <h2 class="contact__title">Write me your Message</h2>
+            <h3 class="contact__title" data-i18n="contact.formTitle">Write me your project</h3>
 
-            <form action=" " class="contact__form" id="contact-form">
+            <form action="#" class="contact__form" id="contact-form">
               <div class="contact__form-div">
-                <label for="" class="contact__form-tag">Names</label>
+                <label for="contact-name" class="contact__form-tag" data-i18n="contact.name">Name</label>
                 <input
-                  name="user_name"
                   type="text"
+                  name="user_name"
+                  id="contact-name"
                   class="contact__form-input"
-                  placeholder="please enter name"
+                  data-i18n-placeholder="contact.name"
+                  placeholder="Name"
+                  required
                 />
               </div>
-
               <div class="contact__form-div">
-                <label for="" class="contact__form-tag">Mail</label>
+                <label for="contact-email" class="contact__form-tag" data-i18n="contact.mail">Mail</label>
                 <input
-                  name="user_email"
                   type="email"
+                  name="user_email"
+                  id="contact-email"
                   class="contact__form-input"
-                  placeholder="enter mail"
+                  data-i18n-placeholder="contact.mail"
+                  placeholder="Mail"
+                  required
                 />
               </div>
-
               <div class="contact__form-div contact__form-area">
-                <label for="" class="contact__form-tag">Message</label>
+                <label for="contact-message" class="contact__form-tag" data-i18n="contact.message">Message</label>
                 <textarea
-                  name="user_mesage"
-                  placeholder="Write your Message"
-                  id="user__message"
+                  name="user_project"
+                  id="contact-message"
                   cols="30"
                   rows="10"
                   class="contact__form-input"
+                  data-i18n-placeholder="contact.message"
+                  placeholder="Message"
+                  required
                 ></textarea>
               </div>
-
-              <div class="button-wrapper">
-                <p class="contact__message" id="contact-message"></p>
-                <button type="submit" class="button">Send Message</button>
-              </div>
+              <button type="submit" class="button" data-i18n="contact.send">Send Message</button>
             </form>
-
-            <!-- Toast Test Buttons (Development Only) -->
-            <div
-              class="toast-test-buttons"
-              style="margin-top: 20px; text-align: center; visibility: hidden"
-            >
-              <button
-                type="button"
-                class="button button--ghost"
-                onclick="toast.success('Bu bir başarı mesajıdır!', 'Başarılı!')"
-                style="margin: 5px"
-              >
-                <i class="fa-solid fa-check"></i> Success Toast
-              </button>
-              <button
-                type="button"
-                class="button button--ghost"
-                onclick="toast.error('Bu bir hata mesajıdır!', 'Hata!')"
-                style="margin: 5px"
-              >
-                <i class="fa-solid fa-times"></i> Error Toast
-              </button>
-              <button
-                type="button"
-                class="button button--ghost"
-                onclick="toast.warning('Bu bir uyarı mesajıdır!', 'Uyarı!')"
-                style="margin: 5px"
-              >
-                <i class="fa-solid fa-exclamation-triangle"></i> Warning Toast
-              </button>
-              <button
-                type="button"
-                class="button button--ghost"
-                onclick="toast.info('Bu bir bilgi mesajıdır!', 'Bilgi')"
-                style="margin: 5px"
-              >
-                <i class="fa-solid fa-info-circle"></i> Info Toast
-              </button>
-            </div>
           </div>
         </div>
       </section>
     </main>
 
-    <!--=============== FOOTER ===============-->
     <footer class="footer">
       <div class="footer__container container">
         <h1 class="footer__title">Yusuf</h1>
-
         <ul class="footer__list">
-          <li>
-            <a href="#about" class="footer__link">About</a>
-          </li>
-          <li>
-            <a href="#work" class="footer__link">Project</a>
-          </li>
-          <li>
-            <a href="#skills" class="footer__link">Skills</a>
-          </li>
+          <li><a href="#about" class="footer__link" data-i18n="footer.about">About</a></li>
+          <li><a href="#work" class="footer__link" data-i18n="footer.project">Projects</a></li>
+          <li><a href="#skills" class="footer__link" data-i18n="footer.skills">Skills</a></li>
+          <li><a href="blog.html" class="footer__link" data-i18n="footer.blog">Blog</a></li>
+          <li><a href="#contact" class="footer__link" data-i18n="footer.contact">Contact</a></li>
         </ul>
-
         <ul class="footer__social">
-          <a
-            href="https://www.facebook.com/yusuf.incesuuu/"
-            target="_blank"
-            class="footer__social-link"
-          >
-            <i class="bx bxl-facebook"></i>
+          <a href="https://github.com/yusufinc" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+            <i class="bx bxl-github"></i>
           </a>
-          <a
-            href="https://www.instagram.com/yusuf.incesuuu/"
-            target="_blank"
-            class="footer__social-link"
-          >
+          <a href="https://www.instagram.com/yusuf.incesuuu/" target="_blank" rel="noopener noreferrer" class="footer__social-link">
             <i class="bx bxl-instagram"></i>
           </a>
-          <a
-            href="https://www.linkedin.com/in/yusuf-incesu/"
-            target="_blank"
-            class="footer__social-link"
-          >
+          <a href="https://www.linkedin.com/in/yusuf-incesu/" target="_blank" rel="noopener noreferrer" class="footer__social-link">
             <i class="bx bxl-linkedin"></i>
           </a>
         </ul>
-
-        <span class="footer__copy">
-          &#169; Yusuf INCESU. All rights reserved
-        </span>
+        <span class="footer__copy" data-i18n="footer.copy">© Yusuf INCESU. All rights reserved</span>
       </div>
     </footer>
 
-    <!--=============== SCROLLREVEAL ===============-->
     <script src="assets/js/scrollreveal.min.js"></script>
-
-    <!--=============== SWIPER JS ===============-->
     <script src="assets/js/swiper-bundle.min.js"></script>
-
-    <!--=============== MIXITUP FILTER ===============-->
     <script src="assets/js/mixitup.min.js"></script>
-
-    <!--=============== EMAIL JS ===============-->
-
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
-    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/projects-data.js"></script>
+    <script src="assets/js/blog-data.js"></script>
+    <script src="assets/js/experience-data.js"></script>
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/seo.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/home-blog.js"></script>
   </body>
 </html>
+

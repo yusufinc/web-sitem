@@ -1,0 +1,15 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="pg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a3328"/>
+      <stop offset="100%" stop-color="#6bc5a0"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" rx="24" fill="url(#pg)"/>
+  <rect x="80" y="90" width="640" height="320" rx="16" fill="rgba(0,0,0,0.25)"/>
+  <rect x="110" y="120" width="180" height="16" rx="8" fill="rgba(255,255,255,0.35)"/>
+  <rect x="110" y="160" width="420" height="12" rx="6" fill="rgba(255,255,255,0.18)"/>
+  <rect x="110" y="190" width="360" height="12" rx="6" fill="rgba(255,255,255,0.14)"/>
+  <rect x="110" y="280" width="140" height="40" rx="10" fill="rgba(255,255,255,0.25)"/>
+  <text x="56" y="460" font-family="Poppins, Arial, sans-serif" font-size="28" font-weight="600" fill="rgba(255,255,255,0.85)">Database</text>
+</svg>

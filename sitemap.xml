@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://yusufincesu.netlify.app/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://yusufincesu.netlify.app/blog.html</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://yusufincesu.netlify.app/blog-post.html?id=workflow-basics</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yusufincesu.netlify.app/blog-post.html?id=eba-plus-tips</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yusufincesu.netlify.app/blog-post.html?id=synergy-csp-modules</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yusufincesu.netlify.app/blog-post.html?id=csharp-clean-apis</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yusufincesu.netlify.app/blog-post.html?id=ef-core-practical</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yusufincesu.netlify.app/blog-post.html?id=postgresql-habits</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yusufincesu.netlify.app/blog-post.html?id=mssql-vs-postgres</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yusufincesu.netlify.app/blog-post.html?id=redis-caching</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yusufincesu.netlify.app/blog-post.html?id=mongodb-when</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yusufincesu.netlify.app/blog-post.html?id=sqlite-local</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yusufincesu.netlify.app/blog-post.html?id=typescript-frontend</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yusufincesu.netlify.app/blog-post.html?id=tailwind-vs-scss</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yusufincesu.netlify.app/blog-post.html?id=react-native-expo</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yusufincesu.netlify.app/blog-post.html?id=rest-integration</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yusufincesu.netlify.app/blog-post.html?id=metabase-dashboards</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yusufincesu.netlify.app/blog-post.html?id=docker-dev</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yusufincesu.netlify.app/blog-post.html?id=access-control</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yusufincesu.netlify.app/blog-post.html?id=nextjs-seo</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yusufincesu.netlify.app/blog-post.html?id=portfolio-story</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yusufincesu.netlify.app/blog-post.html?id=learning-in-public</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://yusufincesu.netlify.app/project.html?id=is-ortagim</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://yusufincesu.netlify.app/project.html?id=actsenso</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://yusufincesu.netlify.app/project.html?id=cozycose</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://yusufincesu.netlify.app/project.html?id=daily-manager</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://yusufincesu.netlify.app/project.html?id=baklava-site</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://yusufincesu.netlify.app/project.html?id=construction-site</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://yusufincesu.netlify.app/project.html?id=tcmb-rate-sync</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://yusufincesu.netlify.app/project.html?id=bookstore-api</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://yusufincesu.netlify.app/project.html?id=growthhub</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://yusufincesu.netlify.app/project.html?id=act-monitoring</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://yusufincesu.netlify.app/project.html?id=invoice-compare</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://yusufincesu.netlify.app/project.html?id=workflow-rest-api</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://yusufincesu.netlify.app/project.html?id=music-app</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://yusufincesu.netlify.app/project.html?id=quiz-app</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://yusufincesu.netlify.app/project.html?id=asset-tracker</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://yusufincesu.netlify.app/project.html?id=home-workout</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+</urlset>
+

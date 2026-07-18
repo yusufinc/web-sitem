@@ -1,0 +1,17 @@
+﻿<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='630' viewBox='0 0 1200 630'>
+  <defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0%' stop-color='#2b1a5e'/><stop offset='100%' stop-color='#7c3aed'/></linearGradient></defs>
+  <rect width='1200' height='630' fill='url(#g)'/>
+  <circle cx='1030' cy='120' r='210' fill='rgba(255,255,255,0.06)'/>
+  <circle cx='230' cy='315' r='155' fill='rgba(255,255,255,0.10)'/>
+  <svg x='110' y='195' width='240' height='240' viewBox='0 0 128 128'>
+    <rect x='14' y='18' width='34' height='26' rx='6' fill='#ffffff'/>
+    <rect x='80' y='18' width='34' height='26' rx='6' fill='#d9ccff'/>
+    <rect x='47' y='84' width='34' height='26' rx='6' fill='#ffffff'/>
+    <path d='M48 31h32' stroke='#e6ddff' stroke-width='4' stroke-linecap='round'/>
+    <path d='M31 44v20a8 8 0 0 0 8 8h9' stroke='#e6ddff' stroke-width='4' stroke-linecap='round' fill='none'/>
+    <path d='M97 44v20a8 8 0 0 1-8 8h-8' stroke='#e6ddff' stroke-width='4' stroke-linecap='round' fill='none'/>
+    <circle cx='64' cy='97' r='4' fill='#7c3aed'/>
+  </svg>
+  <text x='430' y='285' font-family='Segoe UI, Arial, sans-serif' font-size='30' fill='rgba(255,255,255,0.55)'>&lt;/&gt; blog</text>
+  <text x='430' y='362' font-family='Segoe UI, Arial, sans-serif' font-size='60' font-weight='700' fill='#ffffff'>Workflow</text>
+</svg>

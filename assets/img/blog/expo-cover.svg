@@ -1,0 +1,10 @@
+﻿<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='630' viewBox='0 0 1200 630'>
+  <defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0%' stop-color='#0a0a1a'/><stop offset='100%' stop-color='#3b3b6a'/></linearGradient></defs>
+  <rect width='1200' height='630' fill='url(#g)'/>
+  <circle cx='1030' cy='120' r='210' fill='rgba(255,255,255,0.06)'/>
+  <circle cx='150' cy='540' r='150' fill='rgba(255,255,255,0.05)'/>
+  <rect x='96' y='175' width='280' height='280' rx='56' fill='#ffffff'/>
+  <svg x='156' y='235' width='160' height='160' viewBox='0 0 24 24' fill='#000020'><path d="M0 20.084c.043.53.23 1.063.718 1.778.58.849 1.576 1.315 2.303.567.49-.505 5.794-9.776 8.35-13.29a.761.761 0 011.248 0c2.556 3.514 7.86 12.785 8.35 13.29.727.748 1.723.282 2.303-.567.57-.835.728-1.42.728-2.046 0-.426-8.26-15.798-9.092-17.078-.8-1.23-1.044-1.498-2.397-1.542h-1.032c-1.353.044-1.597.311-2.398 1.542C8.267 3.991.33 18.758 0 19.77Z"/></svg>
+  <text x='430' y='285' font-family='Segoe UI, Arial, sans-serif' font-size='30' fill='rgba(255,255,255,0.55)'>&lt;/&gt; blog</text>
+  <text x='430' y='362' font-family='Segoe UI, Arial, sans-serif' font-size='56' font-weight='700' fill='#ffffff'>React Native</text>
+</svg>

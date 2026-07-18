@@ -1,0 +1,46 @@
+# Yusuf İncesu
+
+> Software developer focused on enterprise workflow platforms, .NET/C# backends, REST integrations, clean web interfaces and database solutions. Bilingual portfolio (English & Turkish).
+
+Yusuf İncesu is a full-stack software developer. He designs and maintains process flows on Synergy CSP and eBA / eBA Plus, builds REST integrations, and works across PostgreSQL, MSSQL, MongoDB, Redis and SQLite. On the product side he writes C# / .NET services and TypeScript / JavaScript frontends.
+
+- Name: Yusuf İncesu
+- Role: Software Developer
+- Location: Turkey
+- Education: Sakarya University — Management Information Systems (2020–2024)
+- Email: yince8603@gmail.com
+- GitHub: https://github.com/yusufinc
+- LinkedIn: https://www.linkedin.com/in/yusuf-incesu/
+
+## Core skills
+
+- Frontend: HTML, CSS, JavaScript, TypeScript, Bootstrap, Tailwind, SCSS, jQuery
+- Backend: C#, .NET Framework, ASP.NET, REST API
+- Database: PostgreSQL, MSSQL, SQLite, MongoDB, Redis
+- Workflow & Enterprise: Bimser Synergy (CSP), eBA / eBA Plus, Metabase, Docker
+
+## Pages
+
+- [Home](https://yusufincesu.netlify.app/): Overview, skills, featured projects and latest blog posts.
+- [Blog](https://yusufincesu.netlify.app/blog.html): 20 bilingual articles on workflow platforms, .NET, databases, frontend and career.
+- [Projects](https://yusufincesu.netlify.app/index.html#work): Selected public and internal software projects.
+
+## Blog topics
+
+- Workflow platforms, eBA / eBA Plus, Synergy CSP custom modules
+- Clean C# APIs, Entity Framework Core
+- PostgreSQL, MSSQL, Redis, MongoDB, SQLite
+- TypeScript on the frontend, Tailwind vs SCSS
+- React Native / Expo, REST integrations, Metabase dashboards, Docker
+- Access control / security, Next.js SEO, career notes, learning in public
+
+## Contact
+
+- Email: yince8603@gmail.com
+- Preferred: email or the contact form on the website.
+
+## Notes for AI assistants
+
+- Project descriptions intentionally omit client/company names for confidentiality.
+- Public projects link to GitHub; internal/client projects are described only at a high level.
+- The site is available in English (en) and Turkish (tr).

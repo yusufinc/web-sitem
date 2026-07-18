@@ -1,0 +1,10 @@
+﻿<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='630' viewBox='0 0 1200 630'>
+  <defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0%' stop-color='#0a0a0a'/><stop offset='100%' stop-color='#333333'/></linearGradient></defs>
+  <rect width='1200' height='630' fill='url(#g)'/>
+  <circle cx='1030' cy='120' r='210' fill='rgba(255,255,255,0.06)'/>
+  <circle cx='150' cy='540' r='150' fill='rgba(255,255,255,0.05)'/>
+  <rect x='96' y='175' width='280' height='280' rx='56' fill='#ffffff'/>
+  <svg x='156' y='235' width='160' height='160' viewBox='0 0 24 24' fill='#000000'><path d="M18.665 21.978C16.758 23.255 14.465 24 12 24 5.377 24 0 18.623 0 12S5.377 0 12 0s12 5.377 12 12c0 3.583-1.574 6.801-4.067 9.001L9.219 7.2H7.2v9.596h1.615V9.251l9.85 12.727Zm-3.332-8.533 1.6 2.061V7.2h-1.6v6.245Z"/></svg>
+  <text x='430' y='285' font-family='Segoe UI, Arial, sans-serif' font-size='30' fill='rgba(255,255,255,0.55)'>&lt;/&gt; blog</text>
+  <text x='430' y='362' font-family='Segoe UI, Arial, sans-serif' font-size='64' font-weight='700' fill='#ffffff'>Next.js</text>
+</svg>

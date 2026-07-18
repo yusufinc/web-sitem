@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <meta name="description" content="Page not found" />
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="assets/img/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="assets/img/favicon.png" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>404 | Yusuf İncesu</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="index.html" class="nav_logo">Yusuf</a>
+        <div class="nav_actions">
+          <button type="button" class="lang-button" id="lang-button" aria-label="Language">EN</button>
+          <i class="bx bx-moon change-theme" id="theme-button"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="section error-page">
+        <div class="error-page__inner container">
+          <span class="error-page__code">404</span>
+          <h1 class="error-page__title" data-i18n="error.title">Page not found</h1>
+          <p class="error-page__text" data-i18n="error.text">
+            The page you are looking for doesn’t exist or has been moved.
+          </p>
+          <div class="error-page__actions">
+            <a href="index.html" class="button" data-i18n="error.home">Back to home</a>
+            <a href="blog.html" class="button button--ghost" data-i18n="error.blog">Go to blog</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

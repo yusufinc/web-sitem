@@ -1,0 +1,14 @@
+﻿<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='630' viewBox='0 0 1200 630'>
+  <defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0%' stop-color='#1a2a4a'/><stop offset='100%' stop-color='#4f46e5'/></linearGradient></defs>
+  <rect width='1200' height='630' fill='url(#g)'/>
+  <circle cx='1030' cy='120' r='210' fill='rgba(255,255,255,0.06)'/>
+  <circle cx='230' cy='315' r='155' fill='rgba(255,255,255,0.10)'/>
+  <svg x='110' y='195' width='240' height='240' viewBox='0 0 128 128'>
+    <circle cx='34' cy='64' r='20' fill='#ffffff'/>
+    <circle cx='94' cy='64' r='20' fill='#cfc9ff'/>
+    <path d='M30 58h10v-8l14 14-14 14v-8H30z' fill='#4f46e5'/>
+    <path d='M98 70H88v8L74 64l14-14v8h10z' fill='#312b8a'/>
+  </svg>
+  <text x='430' y='285' font-family='Segoe UI, Arial, sans-serif' font-size='30' fill='rgba(255,255,255,0.55)'>&lt;/&gt; blog</text>
+  <text x='430' y='362' font-family='Segoe UI, Arial, sans-serif' font-size='62' font-weight='700' fill='#ffffff'>REST APIs</text>
+</svg>
