@@ -1,4 +1,4 @@
-/* 20 blog posts — bilingual, full-length bodies */
+/* 21 blog posts — bilingual, full-length bodies */
 window.BLOG_POSTS = [
   {
     id: "workflow-basics",
@@ -832,6 +832,46 @@ window.BLOG_POSTS = [
         </ul>
         <p>İyi gitmeyen kısımlar dahil dürüst retrospektifler, bir öne çıkanlar derlemesinden daha değerlidir. Kimse "her şey harika gitti"den öğrenmez, ama çok kişi "bunun için yanlış veritabanını seçtim ve bana neye mal oldu" diyen bir yazıdan öğrenir.</p>
         <p>Yıllar içinde, bir şeyi yazıya dökme alışkanlığı sessizce sahip olduğum en iyi debug araçlarından birine dönüştü — çoğu zaman, bir problemi açıklayacak kadar net yazmak, çözümü ortaya çıkaranın kendisidir.</p>
+      `,
+    },
+  },
+  {
+    id: "dotnet-logging",
+    date: "2026-07-18",
+    category: { en: "Backend", tr: "Backend" },
+    image: "assets/img/blog/csharp-cover.svg",
+    title: {
+      en: "Practical logging in .NET",
+      tr: ".NET'te pratik loglama",
+    },
+    excerpt: {
+      en: "Structured logs, sensible levels and context that actually helps you debug production.",
+      tr: "Yapısal loglar, doğru seviyeler ve üretimde hata ayıklamaya gerçekten yardım eden bağlam.",
+    },
+    content: {
+      en: `
+        <p>Logging is one of those things that feels optional until the first production incident, and then it becomes the only thing that matters. In .NET the built-in <code>ILogger</code> abstraction is usually enough, but how you use it decides whether a 2 a.m. investigation takes five minutes or five hours.</p>
+        <p>The first habit worth building is structured logging. Instead of stitching values into a string, pass them as named parameters so your log backend can index and filter them. "Order {OrderId} failed for user {UserId}" is searchable; a pre-formatted sentence is not.</p>
+        <ul>
+          <li>Use log levels deliberately: Information for business events, Warning for recoverable issues, Error for failures that need attention</li>
+          <li>Attach a correlation id so a single request can be traced across services</li>
+          <li>Never log secrets, tokens or full request bodies with personal data</li>
+          <li>Prefer scopes over repeating the same context on every line</li>
+        </ul>
+        <p>Log levels are a contract with your future self. If everything is logged at Information, nothing is; if everything is an Error, alerts become noise you learn to ignore. I try to keep Error meaning "a human should probably look at this."</p>
+        <p>Finally, treat logs as data, not prose. When they are structured and consistent, you can build dashboards, set alerts and answer questions you didn't anticipate — which is exactly what you need when something breaks and everyone is looking at you.</p>
+      `,
+      tr: `
+        <p>Loglama, ilk üretim arızası yaşanana kadar isteğe bağlı gibi görünen, o an geldiğindeyse tek önemli şey hâline gelen konulardan biridir. .NET'te yerleşik <code>ILogger</code> soyutlaması çoğu zaman yeterlidir; ama onu nasıl kullandığınız, gece 2'deki bir incelemenin beş dakika mı yoksa beş saat mi süreceğini belirler.</p>
+        <p>Edinilmesi gereken ilk alışkanlık yapısal loglamadır. Değerleri bir metnin içine gömmek yerine adlandırılmış parametreler olarak geçirin ki log altyapınız bunları indeksleyip filtreleyebilsin. "Sipariş {OrderId}, kullanıcı {UserId} için başarısız oldu" aranabilir; önceden biçimlendirilmiş bir cümle ise değildir.</p>
+        <ul>
+          <li>Log seviyelerini bilinçli kullanın: iş olayları için Information, toparlanabilir durumlar için Warning, ilgilenilmesi gereken hatalar için Error</li>
+          <li>Tek bir isteğin servisler arasında izlenebilmesi için bir korelasyon kimliği ekleyin</li>
+          <li>Gizli anahtarları, token'ları veya kişisel veri içeren istek gövdelerini asla loglamayın</li>
+          <li>Aynı bağlamı her satırda tekrarlamak yerine scope kullanmayı tercih edin</li>
+        </ul>
+        <p>Log seviyeleri, gelecekteki kendinizle yaptığınız bir sözleşmedir. Her şey Information seviyesindeyse hiçbir şey öyle değildir; her şey Error ise uyarılar görmezden gelmeyi öğrendiğiniz bir gürültüye dönüşür. Ben Error'ı "muhtemelen bir insanın bakması gerekiyor" anlamında tutmaya çalışırım.</p>
+        <p>Son olarak, logları düz yazı değil veri olarak görün. Yapısal ve tutarlı olduklarında panolar kurabilir, uyarılar tanımlayabilir ve öngörmediğiniz soruları yanıtlayabilirsiniz — bir şeyler bozulduğunda ve herkes size baktığında ihtiyacınız olan şey tam olarak budur.</p>
       `,
     },
   },
